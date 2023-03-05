@@ -7,7 +7,7 @@
 > * [게더타운](https://app.gather.town/app/N6mEpAxZazfOv2HV/do-study) - 참여코드 필요
 > * [스터디 단톡](https://google.com) - 참여코드 필요
 > * [스터디 일정](https://google.com)
-> * [문의](https://google.com)
+> * <a href="https://www.google.com/" target="_blank">문의</a>
 
 
 ## 진행 방식
