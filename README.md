@@ -1,5 +1,7 @@
 # [스터디, 예정] 프로그래밍 대회에서 배우는 알고리즘 문제해결전략 (종만북)
-<img src="https://user-images.githubusercontent.com/49299283/222945460-6c2c75cf-1a1d-4929-86f6-6c73dd1248bf.jpg" width="300"/>
+<img src="https://user-images.githubusercontent.com/49299283/222945460-6c2c75cf-1a1d-4929-86f6-6c73dd1248bf.jpg" width="300"/> 
+
+* week0은 스터디 진행 방식 예시용 
 
 ## 종만북 스터디
 > * [게더타운](https://app.gather.town/app/N6mEpAxZazfOv2HV/do-study) - 참여코드 필요
