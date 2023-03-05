@@ -1,16 +1,16 @@
 # [스터디, 예정] 프로그래밍 대회에서 배우는 알고리즘 문제해결전략 (종만북)
 <img src="https://user-images.githubusercontent.com/49299283/222945460-6c2c75cf-1a1d-4929-86f6-6c73dd1248bf.jpg" width="300"/> 
 
-* week0은 스터디 진행 방식 예시용 
 
 ## 종만북 스터디
 > * [게더타운](https://app.gather.town/app/N6mEpAxZazfOv2HV/do-study) - 참여코드 필요
-> * [스터디 단톡](https://google.com) - 참여코드 필요
-> * [스터디 일정](https://google.com)
-> * <a href="https://www.google.com/" target="_blank">문의</a>
+> * [스터디 단톡](https://open.kakao.com/o/gZGnNd8e) - 참여코드 필요
+> * [스터디 일정](https://nahwasa.com/entry/Study-010-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%EC%A0%9C%ED%95%B4%EA%B2%B0%EC%A0%84%EB%9E%B5-%EC%A2%85%EB%A7%8C%EB%B6%81)
+> * [문의](https://open.kakao.com/o/sgyilZZc)
 
 
 ## 진행 방식
+* week0은 스터디 진행 방식 예시용
 > ### 종만북 (필수)
 > * 각 주차에 해당 챕터의 내용을 보며 책에 나온 문제를 풀어 weekN 폴더에 제출. (문제별 단일 파일)
 > * 파일명 : [문제key]-[깃헙id]_[번호].[확장자]
@@ -30,6 +30,7 @@
 
 
 ## 이슈 사용방법
+* week0 라벨이 달린 이슈는 예시용
 > ### 라벨
 > * weekN (공통) : 각 주차에 맞게 필수로 선택 (따라서 모든 이슈는 최소 2개의 라벨이 있어야 함)
 > * documentation : 별도로 해당 알고리즘에 대해 설명을 작성하거나, 블로그 등에 작성 후 링크용도. 혹은 관련 알고리즘 추천도 가능.
