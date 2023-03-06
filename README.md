@@ -1,4 +1,4 @@
-# [스터디] 종만북 (프로그래밍 대회에서 배우는 알고리즘 문제해결전략)
+# 종만북 스터디 (프로그래밍 대회에서 배우는 알고리즘 문제해결전략)
 <img src="https://user-images.githubusercontent.com/49299283/222945460-6c2c75cf-1a1d-4929-86f6-6c73dd1248bf.jpg" width="300"/> 
 
 
