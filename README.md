@@ -9,6 +9,13 @@
 > * [문의](https://open.kakao.com/o/sgyilZZc)
 
 
+## 참가자
+> * [nahwasa](https://github.com/nahwasa) (boj : nahwasa)
+> * [가니](https://github.com/kwanik-kor) (boj : rhksdlr134)
+> * [류나](https://github.com/JustBestRyuna) (boj : specidiee)
+> * [테스트](https://github.com/r4pidstart) (boj : r4pidstart)
+
+
 ## 진행 방식
 * week0은 스터디 진행 방식 예시용 및 테스트용
 > ### 종만북 (필수)
