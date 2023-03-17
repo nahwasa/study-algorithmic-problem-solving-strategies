@@ -14,7 +14,7 @@
 > * [가니](https://github.com/kwanik-kor) (boj : rhksdlr134)
 > * [류나](https://github.com/JustBestRyuna) (boj : specidiee)
 > * [테스트](https://github.com/r4pidstart) (boj : r4pidstart)
-> * [kevinsly00](https://github.com/kevinsly00) (boj : kevinlys00)
+> * [kevinlys00](https://github.com/kevinlys00) (boj : kevinlys00)
 
 
 ## 진행 방식
