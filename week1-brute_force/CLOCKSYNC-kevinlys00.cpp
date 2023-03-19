@@ -26,9 +26,9 @@ int main(){
                 tmp+=k&3; k>>=2;
             }
             
-            k=0;
-            for(j=0 ; j<16 ; j++) k+=(CLOCK[j]==chk[j]);
-            if(k==16) ans=min(ans,tmp);
+            k=1;
+            for(j=0 ; j<16 ; j++) k&=(CLOCK[j]==chk[j]);
+            if(k) ans=min(ans,tmp);
         }
         
         cout<<(ans==INF?-1:ans)<<'\n';
