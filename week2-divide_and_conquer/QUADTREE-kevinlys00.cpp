@@ -1,4 +1,4 @@
-//tree + d&c
+//tree + dfs
 #include<bits/stdc++.h>
 using namespace std;
 
