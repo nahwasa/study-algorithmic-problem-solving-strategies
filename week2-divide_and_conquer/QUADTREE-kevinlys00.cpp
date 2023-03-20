@@ -12,7 +12,7 @@ string Z(){
         e=Z();
     }
     
-    return a+b+c+d+e;
+    return a+d+e+b+c;
 }
 
 int main(){
