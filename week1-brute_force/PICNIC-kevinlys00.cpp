@@ -4,14 +4,14 @@ using namespace std;
 int used, Wkr[10][10], n, m;
 
 int solve(){
-    if(used==(1<<n)-1) return 1;
+    if(used+1==1<<n) return 1;
     
     int i,ans=0;
-    for(i=0 ; i<n ; i++) if(!(used&(1<<i))) break;
+    for(i=0 ; i<n ; i++) if(!(used&1<<i)) break;
     if(i==n) return 0;
     used^=1<<i;
     for(int j=i+1 ; j<n ; j++){
-        if(Wkr[i][j] && !(used&(1<<j))){
+        if(Wkr[i][j] && !(used&1<<j)){
             used^=1<<j;
             ans+=solve();
             used^=1<<j;
