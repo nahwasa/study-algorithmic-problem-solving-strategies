@@ -6,7 +6,7 @@ int MAX;
 void fft(vector<base> &a, bool inv){
     for(int i=1 ; i<MAX ; i++){
         int bit=MAX>>1, j=0;
-        for(int k=0 ; 1<<k<MAX ; k++) if(i&1<<k) j|=bit/(1<<k);  
+        for(int k=0 ; 1<<k<MAX ; k++) if(i&1<<k) j|=bit>>k;  
         if(i<j) swap(a[i],a[j]);
     }
     
