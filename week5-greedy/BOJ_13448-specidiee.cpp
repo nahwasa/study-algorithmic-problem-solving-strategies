@@ -25,10 +25,10 @@ int main() {
     sort(q.begin(), q.end(), greater<>());
     vector<vector<ll>> dp(N+1, vector<ll>(T+1));
     for (int i = 0; i < N; ++i) for (ll j = 1; j <= T; ++j) {
-            ll points = q[i].m - j * q[i].p;
-            ll knapsack = (q[i].r <= j) ? (dp[i][j - q[i].r] + points) : 0;
-            dp[i+1][j] = max(dp[i][j], knapsack);
-        }
+        ll points = q[i].m - j * q[i].p;
+        ll knapsack = (q[i].r <= j) ? (dp[i][j - q[i].r] + points) : 0;
+        dp[i+1][j] = max(dp[i][j], knapsack);
+    }
     ll ans = 0;
     for (int i = 1; i <= T; ++i) ans = max(ans, dp[N][i]);
     cout << ans;
