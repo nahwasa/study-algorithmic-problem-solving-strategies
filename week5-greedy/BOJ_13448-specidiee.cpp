@@ -4,7 +4,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-typedef pair<float, int> pfi;
 typedef long long ll;
 struct question {
     int m, p, r;
