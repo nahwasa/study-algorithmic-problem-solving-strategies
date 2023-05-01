@@ -1,7 +1,7 @@
 // https://www.acmicpc.net/problem/
 // KAKURO2
 
-// INCOMPLETE
+// INCOMPLETED
 #include"bits/stdc++.h"
 #include<cassert>
 using namespace std;
