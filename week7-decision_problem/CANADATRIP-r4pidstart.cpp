@@ -16,17 +16,6 @@ int check(int mid, vector<tuple<int, int, int> >& arr, int k)
     }
     return cnt >= k;
 }
-// 1 5
-// 26 17 4
-// 012345678901234567890123456
-// ----------b---a---a---a---c
-//           12345678901234567
-// b -> range_start = loca - start
-// c -> range_end = min(mid, loca);
-// 16 / 4 -> 4
-// 13 / 4 -> 3.x
-// 12 / 4 -> 3
-// -> ceil(range / duration) 
 
 int main(void)
 {
