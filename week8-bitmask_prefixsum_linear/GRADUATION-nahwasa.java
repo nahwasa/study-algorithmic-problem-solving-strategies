@@ -78,7 +78,6 @@ public class Main {
             while (c-->0) semester[i] |= 1<<Integer.parseInt(st.nextToken());
         }
 
-        boolean[][] v = new boolean[m][1<<n];
         Queue<Pos> q = new ArrayDeque<>();
         q.add(new Pos(0, 0, 0, 0));
         int answer = Integer.MAX_VALUE;
@@ -92,7 +91,6 @@ public class Main {
             }
             if (cur.semesterIdx >= m) continue;
 
-            v[cur.semesterIdx][cur.subject] = true;
             q.add(new Pos(cur.subject, cur.semesterIdx+1, cur.cnt, cur.answer));    // 이번학기 패스하는 경우
 
             List<Candidate> candidates = candidates(pre, n, l, cur.subject, semester[cur.semesterIdx]);
@@ -100,9 +98,7 @@ public class Main {
                 if (next.cnt == 0) continue;
 
                 int nextSubject = cur.subject|next.subjects;
-                if (v[cur.semesterIdx][nextSubject]) continue;
 
-                v[cur.semesterIdx][nextSubject] = true;
                 q.add(new Pos(nextSubject, cur.semesterIdx+1, cur.cnt+next.cnt, cur.answer+1));
             }
         }
