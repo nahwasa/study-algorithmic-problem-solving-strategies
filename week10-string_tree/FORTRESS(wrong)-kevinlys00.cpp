@@ -13,7 +13,6 @@ int main(){
     while(c--){
         int n; cin>>n;
         vector<pair<int,pair<int,int>>> fortress;
-        fortress.push_back({-20202,{0,0}});
         for(int i=0 ; i<n ; i++){
             int x, y, r; cin>>x>>y>>r;
             fortress.push_back({-r,{x,y}});
@@ -23,7 +22,7 @@ int main(){
         
         vector<int>tree[101];
         int depth[101], deepest=0, idx=0; depth[0]=0;
-        for(int i=1 ; i<=n ; i++){
+        for(int i=1 ; i<n ; i++){
             int tmp=0;
             for(int j=0 ; j<i ; j++){
                 if(is_inside(FS(i).ss.ff,FS(i).ss.ss,FS(i).ff,FS(j).ss.ff,FS(j).ss.ss,FS(j).ff))
@@ -34,6 +33,7 @@ int main(){
             if(deepest==depth[tmp]) deepest++, idx=i;
             depth[i]=depth[tmp]+1;
         }
+        //for(int i=0 ; i<n ; i++) cout<<tree[i].size()<<' ';cout<<'\n';
         
         int vt[101], ans=0; fill(vt,vt+n,-1); vt[idx]=0;
         queue<int> bfs; bfs.push(idx);
