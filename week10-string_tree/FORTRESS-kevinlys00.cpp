@@ -5,7 +5,7 @@ using namespace std;
 #define FS(i) fortress[i]
 
 bool is_inside(int x1, int y1, int r1, int x2, int y2, int r2){
-    return (r1-r2)*(r1-r2)<(x1-x2)*(x1-x2)+(y1-y2)*(y1-y2);
+    return (r1-r2)*(r1-r2)>(x1-x2)*(x1-x2)+(y1-y2)*(y1-y2);
 }
 
 int main(){
@@ -21,7 +21,7 @@ int main(){
         sort(fortress.begin(),fortress.end());
         
         vector<int>tree[101];
-        int depth[101], deepest=0, idx=0; depth[0]=0;
+        int depth[101], deepest=0, idx=0; fill(depth,depth+101,0);
         for(int i=1 ; i<n ; i++){
             int tmp=0;
             for(int j=0 ; j<i ; j++){
@@ -33,7 +33,6 @@ int main(){
             if(deepest==depth[tmp]) deepest++, idx=i;
             depth[i]=depth[tmp]+1;
         }
-        //for(int i=0 ; i<n ; i++) cout<<tree[i].size()<<' ';cout<<'\n';
         
         int vt[101], ans=0; fill(vt,vt+n,-1); vt[idx]=0;
         queue<int> bfs; bfs.push(idx);
