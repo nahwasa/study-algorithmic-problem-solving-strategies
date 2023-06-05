@@ -10,7 +10,7 @@
 
 
 ## 참가자
-> * [nahwasa](https://github.com/nahwasa) (boj : [nahwasa]([https://github.com/nahwasa](https://solved.ac/profile/nahwasa)))
+> * [nahwasa](https://github.com/nahwasa) (boj : [nahwasa](https://solved.ac/profile/nahwasa))
 > * [가니](https://github.com/kwanik-kor) (boj : [rhksdlr134](https://solved.ac/profile/rhksdlr134))
 > * [류나](https://github.com/JustBestRyuna) (boj : [specidiee](https://solved.ac/profile/specidiee))
 > * [테스트](https://github.com/r4pidstart) (boj : [r4pidstart](https://solved.ac/profile/r4pidstart))
