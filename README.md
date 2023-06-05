@@ -10,11 +10,11 @@
 
 
 ## 참가자
-> * [nahwasa](https://github.com/nahwasa) (boj : nahwasa)
-> * [가니](https://github.com/kwanik-kor) (boj : rhksdlr134)
-> * [류나](https://github.com/JustBestRyuna) (boj : specidiee)
-> * [테스트](https://github.com/r4pidstart) (boj : r4pidstart)
-> * [kevinlys00](https://github.com/kevinlys00) (boj : kevinlys00)
+> * [nahwasa](https://github.com/nahwasa) (boj : [nahwasa]([https://github.com/nahwasa](https://solved.ac/profile/nahwasa)))
+> * [가니](https://github.com/kwanik-kor) (boj : [rhksdlr134](https://solved.ac/profile/rhksdlr134))
+> * [류나](https://github.com/JustBestRyuna) (boj : [specidiee](https://solved.ac/profile/specidiee))
+> * [테스트](https://github.com/r4pidstart) (boj : [r4pidstart](https://solved.ac/profile/r4pidstart))
+> * [kevinlys00](https://github.com/kevinlys00) (boj : [kevinlys00](https://solved.ac/profile/kevinlys00))
 
 
 ## 진행 방식
