@@ -5,11 +5,21 @@ int toNum(char c) {
     return c - 'A';
 }
 
+struct word {
+    string str;
+    int usage;
+    word(string s, int u): str(s), usage(u) {}
+    bool operator<(const word& w) const {
+        if (usage == w.usage) return str > w.str;
+        return usage < w.usage;
+    }
+};
+
 struct vertex {
     char alphabet;
-    int usage;
+    priority_queue<word> pq;
     vector<vertex*> child;
-    vertex(char a): alphabet(a), usage(0) {
+    vertex(char a): alphabet(a) {
         child.assign(26, nullptr);
     }
 };
@@ -21,32 +31,30 @@ public:
     Trie() {
         root = new vertex(' ');
     }
-    void insert(string word, int usage) {
+    void insert(string str, int usage) {
         vertex* cur = root;
-        for (int i = 0; i < word.size(); ++i) {
-            int alphaNum = toNum(word[i]);
+        for (int i = 0; i < str.size(); ++i) {
+            int alphaNum = toNum(str[i]);
             if (cur->child[alphaNum] == nullptr) {
-                cur->child[alphaNum] = new vertex(word[i]);
+                cur->child[alphaNum] = new vertex(str[i]);
             }
             cur = cur->child[alphaNum];
+            cur->pq.emplace(str, usage);
         }
-        cur->usage = usage;
     }
-    bool search(string word) {
+    int search(string str) {
         vertex* cur = root;
-        for (int i = 0; i < word.size(); ++i) {
-            int alphaNum = toNum(word[i]);
+        for (int i = 0; i < str.size(); ++i) {
+            int alphaNum = toNum(str[i]);
             if (cur->child[alphaNum] == nullptr) {
-                return false;
+                return str.size();
             }
             cur = cur->child[alphaNum];
+            if (cur->pq.top().str == str) {
+                return min(i + 2, (int)str.size());
+            }
         }
-        return cur->usage > 0;
-    }
-    int autocomplete(string word) {
-        if (!search(word)) return word.size();
-        // TODO
-        return 0;
+        return str.size();
     }
 };
 
@@ -63,11 +71,10 @@ int main() {
             cin >> word >> usage;
             trie.insert(word, usage);
         }
-        int ans = 0;
+        int ans = M - 1;
         for (int i = 0; i < M; ++i) {
             string word; cin >> word;
-            ans += trie.autocomplete(word);
-            if (i != M - 1) ans += 1;
+            ans += trie.search(word);
         }
         cout << ans << '\n';
     }
